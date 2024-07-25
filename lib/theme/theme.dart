@@ -7,9 +7,9 @@ class DoDidDoneTheme {
       secondary: const Color(0xFF4ceb8b), // Secondary color
     ),
     useMaterial3: true,
-    // Добавляем стиль для кнопок
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ButtonStyle(
+        backgroundColor: WidgetStateProperty.all<Color>(const Color(0xFF4ceb8b)),
         foregroundColor: WidgetStateProperty.all<Color>(Colors.white),
         textStyle: WidgetStateProperty.all<TextStyle>(
           const TextStyle(color: Colors.white), // Текст кнопок белый
