@@ -7,7 +7,7 @@ class LoginPage extends StatefulWidget {
   State<LoginPage> createState() => _LoginPageState();
 }
 class _LoginPageState extends State<LoginPage> {
-  bool isLogin = true; // Флаг для определения режима (вход/регистрация)
+  bool isLogin = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,7 +25,7 @@ class _LoginPageState extends State<LoginPage> {
                     DoDidDoneTheme.lightTheme.colorScheme.primary,
                     DoDidDoneTheme.lightTheme.colorScheme.secondary,
                   ],
-            stops: const [0.1, 0.9], // Основной цвет занимает 90%
+            stops: const [0.1, 0.9],
           ),
         ),
         child: Padding(
@@ -37,22 +37,21 @@ class _LoginPageState extends State<LoginPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset(
-                    'assets/0qode_symbol_1.png', // Замените на правильный путь к файлу
-                    height: 60, // Устанавливаем высоту изображения
+                    'lib/assets/_2.png',
+                    height: 60,
                   ),
                   const SizedBox(width: 8),
-                  // Добавляем текст "zerocoder"
                   const Text(
                     'zerocoder',
                     style: TextStyle(
-                      fontSize: 62,
+                      fontSize: 54,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white, // Белый цвет текста
+                      color: Colors.white,
                     ),
                   ),
                 ],
               ),
-              const SizedBox(height: 30),
+              const SizedBox(width: 30),
               // Добавляем текст "Do"
               RichText(
                 text: TextSpan(
